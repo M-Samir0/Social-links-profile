@@ -1,0 +1,77 @@
+:root {
+    --bg: #141414;
+    --card: #1f1f1f;
+    --text: #ffffff;
+    --muted: #a3a3a3;
+    --accent: #92c007;
+    --button: #333333;
+    --button-hover: #444444;
+}
+
+
+body {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background: var(--bg);
+    color: var(--text);
+
+}
+
+.card {
+    width: 340px;
+    background: var(--card);
+    padding: 24px;
+    border-radius: 14px;
+    text-align: center;
+}
+
+.avatar {
+    border-radius: 50%;
+    height: 88px;
+    width: 88px;
+    object-fit: cover;
+    display: inline-block;
+    margin: 4px auto 14px;
+}
+
+.name {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.location {
+    color: var(--accent);
+    font-size: .9rem;
+    margin: 6px 0 14px;
+    font-weight: 600;
+}
+
+.bio {
+    color: var(--muted);
+    font-size: .9rem;
+    margin: 0 0 18px;
+}
+
+.links {
+    display: grid;
+    gap: 12px;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    width: auto;
+    background: var(--button);
+    color: var(--text);
+    padding: 12px 16px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: transform 0.2s ease background-color 0.2s ease;
+}
+
+.btn:hover {
+    background: var(--accent);
+    transform: scale(2s);
+}
